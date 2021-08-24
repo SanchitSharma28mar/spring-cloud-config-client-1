@@ -1,0 +1,17 @@
+# Below is used in actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+        
+spring:
+  #This is required to fetch properties from running Spring Cloud Config Server
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
+  # This is required to make sure microservice specific peoprties file is picked up     
+  application:
+    name: spring-cloud-config-client-1

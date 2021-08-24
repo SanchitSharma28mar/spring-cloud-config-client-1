@@ -1,0 +1,5 @@
+my:
+  greeting: Hi from within the application.
+
+server:
+  port: 8080  
