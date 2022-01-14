@@ -2,4 +2,39 @@ my:
   greeting: Hi from within the application.
 
 server:
-  port: 8080  
+  port: 8081  
+
+# Below is used in actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#    
+#  cloud:
+#    bus:
+#      enabled: true
+#      refresh:
+#        enabled: true
+#      env:
+#        enabled: true
+
+#    stream:
+#      kafka:
+#        binder:
+#          auto-add-partitions: true  
+    
+#  kafka:
+#    bootstrap-servers:
+#    - http://localhost:9092
+           
+          
+          
